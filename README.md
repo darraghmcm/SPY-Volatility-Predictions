@@ -67,3 +67,24 @@ Because financial observations are ordered over time, expanding-window walk-forw
 | Accuracy | **0.685** | 0.669 |
 | AUC | 0.705 | **0.728** |
 | Brier Score | **0.217** | 0.220 |
+
+**Interactive Shiny Dashboard**
+
+An interactive R Shiny application was developed to allow users to explore the model predictions.
+
+The dashboard allows user to pick a date and compare the high-volatility probabilities from both logistic regression and xgboost. They can then compare the predictions with the actual observed outcome over the next five trading days.
+
+Link to Shiny Dashboard:
+https://darraghmcm.shinyapps.io/Downloads/
+
+**R Packages Used**
+
+- quantmod - Financial Market Data Retrieval
+- dplyr - Data Manipulation
+- TTR - Technical Indicators
+- ggplot2 - Data Visualisation
+- pROC - ROC Curves and AUC Calculation
+- xgboost - Gradient Boosting Classification
+- car - Multicollinearity Diagnostics
+- shiny - Interactive Dashboard Development
+- rsconnect - Deployment of ShinyApp
